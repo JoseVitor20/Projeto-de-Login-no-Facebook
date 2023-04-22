@@ -1,0 +1,301 @@
+*{margin:0;
+padding:0;
+box-sizing:border-box;
+font-weight: normal;}
+
+html,body{height: 100%;}
+
+@font-face{font-family:"Fonte1";
+src:url('../Fontes/AlfaSlabOne-Regular.ttf')}
+
+@font-face{font-family:"Fonte2";
+src:url('../Fontes/FiraSans-Medium.ttf')}
+
+
+
+
+
+/* Aqui COMEÇA a parte  de criação do LOGIN e LOGO ⬇️ */
+
+.center{max-width:1100px;
+    padding:0 2%;
+    margin: 0 auto;}
+
+.clear{clear:both;}
+
+header{background-color:#4380e2;
+    padding:8px 0;}
+
+div.logo{float: left;
+    color:white;}
+
+.logo h2{font-size: 30px;
+font-family: Fonte1;}
+
+.form-login{float:right;}
+
+.form-login .form-element{display:inline-block;
+    margin-right:15px;}
+
+.form-element p{ color:white;
+    font-size: 14px;
+    font-family: Fonte2;}
+
+.form-element input[type=email],
+.form-element input[type=password]{margin-top:5px;
+    border: 0 ;
+    height: 25px;
+    padding:3px 5px;
+    border-radius:5px;
+    outline: none;}
+
+.form-element input[type=submit]{cursor:pointer;
+    border:2px solid #1969e5;
+    background-color:#1969e5;
+    padding:5px 5px;
+    font-family:Fonte1;
+    border-radius: 5px;
+    color: white;}
+
+
+.form-element input[type=submit]:hover{background:#2363c2;}
+
+
+/* Aqui TERMINA a parte de criação LOGIN e LOGO⬆️ */
+
+
+
+
+
+/* Aqui COMEÇA a parte de criação dentro do formulario⬇️  */
+
+
+section.main{background: linear-gradient(white, #d3d8e8);
+    padding:40px 0;}
+
+.img-pessoas{float: left;
+    width: 60%;}
+
+.img-pessoas img{
+    max-width:100%;}
+
+.abrir-conta{
+    width: 40%;
+    float:left;}
+
+
+.abrir-conta h2{color: black;
+    font-size:25px;
+    font-family: Fonte2;
+    font-weight: bold;
+    margin-left: 10px;}
+
+.abrir-conta h3{
+    color: #1d2129;
+    font-size:19px;
+    font-family:Fonte2;
+    font-weight:bold ;
+    margin:8px;}
+
+.criar-conta{margin-top:10px;}
+
+.w50{width: 50%;
+    float: left;
+    padding:0 5px;}
+
+.w50  input[type=text]{font-family: Fonte2;
+    border: 0; 
+    outline: 0;}
+
+.w100{width: 100%;
+    float:left;
+    padding: 5px 5px;}
+
+.w100 input[type=email],
+.w100 input[type=password]{font-family:Fonte2;
+    outline: 0;
+    border: 0;}
+
+.criar-conta input{width:100%;}
+
+.criar-conta input[type=email],
+.criar-conta input[type=text],
+.criar-conta input[type=password]{height: 40px;
+    padding-left:10px;
+    border:1px solid#1969e5;
+    font-size:13px;
+    font-size: Fonte2;
+    border-radius:5px;}
+
+.criar-conta input[type=submit]{
+    height: 40px;
+    background: linear-gradient(#67ae55,#578843);
+    cursor: pointer;
+    border-radius: 5px;
+    border:0;
+    max-width: 200px;
+    font-size: 19px;
+    color: white;}
+
+.w100 h2{color:#1d2129;
+    font-size:22px;
+    margin-top: 10px;}
+
+.Nascimento{float: left;
+    margin-top: 5px;
+    padding: 5px;
+    margin-right: 3px;}
+
+.input-radio{
+    margin: 8px 10px;
+    float:left;}
+
+.input-radio h2{
+    display: inline-block;}
+
+.input-radio input[type=radio]{
+    width:auto !important;
+    display:inline-block;}
+
+/* Aqui TERMINA a parte de criação de dentro formulario ⬆️ */
+
+
+
+
+
+/* Aqui COMEÇA a parte de criação de fora do Formulario ⬇️ */
+
+
+.Linguas{
+    padding:30px 0;
+    width: 50%;
+    max-width: 750px;
+    text-align: justify;
+    margin: 0 auto;}
+
+.Linguas a{color: #2363c2;
+    text-decoration: none;
+    font-size: 13px;
+    padding-right:5px;
+    font-family:Fonte2;}
+
+.Linguas .Center{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom:10px;}
+
+.Linguas .Selected-lingua{
+    color:#737373;}
+
+.face2023{text-align: center;
+    margin: 5px 0;
+    padding-top: 20px;
+    font-size:11px;
+    font-family:Fonte2; 
+    border-top:1px solid #ccc;}
+
+
+/* Aqui TERMINA a parte de criação de fora do formulario⬆️ */
+
+
+
+
+
+/* Aqui COMEÇA a parte do RESPONCIVO ⬇️ */
+
+
+@media screen and (max-width:768px){
+
+.logo{
+    float: none;
+    width:100%;
+    text-align: center;
+}
+
+.form-login{
+    float: none;
+    width:100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.form-login .form-element{display:block;
+    margin:10px 0;
+}
+
+.form-element p{ color:white;
+    font-size: 14px;
+    font-family: Fonte2;
+}
+
+.form-element input[type=email],
+.form-element input[type=password]{margin-top:5px;
+    border: 0 ;
+    height: 25px;
+    padding:3px 5px;
+    border-radius:5px;
+    outline: none;
+    width: 70%;
+    max-width: 320px;
+}
+
+.form-element input[type=submit]{width: 140px;}
+
+.img-pessoas{width: 100%;
+    margin-bottom: 25px;}
+
+.abrir-conta{width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    float: none;}
+
+.abrir-conta h2{color: black;
+    font-size:4vh;
+    font-family: Fonte2;
+    font-weight: bold;
+    margin-left: 10px;}
+
+.abrir-conta h3{
+    color: #1d2129;
+    font-size:21px;
+    font-family:Fonte2;
+    font-weight:bold ;
+    margin:8px;}
+
+
+.w100 h2{color:#1d2129;
+    font-size:30px;
+    margin-top: 10px;}
+
+.criar-conta input[type=submit]{
+    height: 40px;
+    background: linear-gradient(#67ae55,#578843);
+    cursor: pointer;
+    border-radius: 5px;
+    border:0;
+    width: 30%;
+    max-width: 140px;
+    font-size: 19px;
+    color: white;
+    margin-top: 25px;}
+
+.Nascimento{float: none;
+    margin-top: 5px;
+    padding: 5px;
+    margin-right: 3px;}
+
+.input-radio{display: inline-block;
+    float: none;}
+
+.input-radio h2{
+    font-size:3vh;}
+
+.input-radio input[type=radio]{
+    width:auto !important;
+    }
+}
+
+
+/* Aqui TERMINA a parte do RESPONCIVO⬆️ */
